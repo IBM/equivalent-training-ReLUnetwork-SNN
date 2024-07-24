@@ -1,0 +1,13 @@
+name: tf24
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyter=1.0.0
+  - matplotlib=3.6.2
+  - python=3.8.16
+  - scipy=1.9.3
+  - pip=22.3.1
+  - pip:
+      - numpy==1.19.5
+      - tensorflow-gpu==2.4.1
