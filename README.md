@@ -1,6 +1,7 @@
 # High-performance deep spiking neural networks with 0.3 spikes per neuron
 
-This repository contains code material for the publication: Stanojevic, A., Woźniak, S., Bellec, G., Cherubini, G., Pantazi, A., &amp; Gerstner, W. (2024). High-performance deep spiking neural networks with 0.3 spikes per neuron (arXiv preprint https://arxiv.org/abs/2306.08744) 
+This repository contains code material for the publication: Stanojevic, A., Woźniak, S., Bellec, G., Cherubini, G., Pantazi, A., &amp; Gerstner, W., High-performance deep spiking neural networks with 0.3 spikes per neuron, 
+Nature Communications 15, 6793 (2024). https://www.nature.com/articles/s41467-024-51110-5
 
 Deep spiking neural networks (SNNs) offer the promise of low-power artificial intelligence. However, training deep spiking neural networks (SNNs) with backpropagation has been harder than with artificial neural networks (ANNs), which is puzzling given that recent theoretical results provide exact mapping algorithms from ReLU to time-to-first-spike (TTFS) SNNs. After identifying the issue of vanishing-and-exploding gradient we derive a generic solution for the network initialization and SNN parameterization which enables that the an energy-efficient SNN can be trained as robustly as its ANN counterpart. The SNN training is coded in Python and Tensorflow.
 
