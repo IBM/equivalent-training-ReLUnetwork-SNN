@@ -26,6 +26,8 @@ parser.add_argument('--save', type=strtobool, default=False, help='Store after t
 parser.add_argument('--noise', type=float, default=0.0, help='Noise std.dev.')
 parser.add_argument('--time_bits', type=int, default=0, help='number of bits to represent time. 0 -disabled')
 parser.add_argument('--weight_bits', type=int, default=0, help='number of bits to represent weights. 0 -disabled')
+parser.add_argument('--w_min', type=float, default=-1.0, help='w_min to use if weight_bits is enabled')
+parser.add_argument('--w_max', type=float, default=1.0, help='w_max to use if weight_bits is enabled')
 parser.add_argument('--latency_quantiles', type=float, default=0.0, help='Number of quantiles to take into account when calculating t_max. 0 -disabled')
 parser.add_argument('--mode', type=str, default='', help='Ignore: A hack to address a bug in argsparse during debugging')
 args = parser.parse_known_args(override)
@@ -38,6 +40,8 @@ robustness_params={
     'noise':args.noise,
     'time_bits':args.time_bits,
     'weight_bits': args.weight_bits,
+    'w_min': args.w_min,
+    'w_max': args.w_max,
     'latency_quantiles':args.latency_quantiles
 }
 
